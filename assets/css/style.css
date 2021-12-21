@@ -1,0 +1,55 @@
+/* colors used on the page */
+:root{
+    --light:white;
+}
+
+*{
+    background-color: rgb(36, 37, 37);
+    color:rgb(233, 64, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header p{
+    color:var(--light);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card h2{
+    border: 5px solid var(--light);
+    
+}
+
+.card{
+    height: 300px;
+    width:300px;
+    border:5px dashed var(--light);
+    margin:10px;
+
+}
+.card-header{
+    margin:0 auto;
+    position:relative;
+    margin-top: -20px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .card{
+        width: 50%;
+    }  
+}
+
+@media screen and (max-width: 992px) {
+    .card{
+        width: 100%;
+    }
+}
